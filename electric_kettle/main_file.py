@@ -1,9 +1,9 @@
 import logging, keyboard, time
 from threading import Thread
-from exceptions import *
-from classes import Kettle
+from electric_kettle.exceptions import *
+from electric_kettle.classes import Kettle
 
-logging.basicConfig(filename="mylog.log", encoding='utf-8', level=logging.INFO,
+logging.basicConfig(filename="../mylog.log", encoding='utf-8', level=logging.INFO,
                     format="%(asctime)s - %(levelname)s - %(funcName)s: %(lineno)d - %(message)s")
 
 def water_heating():
